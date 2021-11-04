@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -21,7 +22,7 @@ public:
 
 template<class T, class Tem>
 class Pair {
-private:
+protected:
     T g;
     Tem h;
 public:
@@ -35,6 +36,8 @@ public:
     };
 
 };
+
+
 
 int main()
 {
@@ -55,7 +58,6 @@ int main()
         const Pair<double, int> p2(3.4, 5);
         cout << "Pair: " << p2.first() << ' ' << p2.second() << '\n';
     };
-
 
     return 0;
 }
